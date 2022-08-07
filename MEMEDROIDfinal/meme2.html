@@ -1,0 +1,186 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="meme1.css">
+    <title>Template</title>
+    <style>
+    * {
+    box-sizing: border-box;
+    }
+    body {
+    background:white;
+    min-height: 100vh;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 80px auto 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    }
+    .snowflake {
+    color: rgb(113, 193, 230);
+    font-size: 2em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+    }
+  
+    @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+  
+    .demo {
+        font-family: 'Raleway', sans-serif;
+        color:#fff;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+    .demo a{
+        font-family: 'Raleway', sans-serif;
+    color: #000;    
+    }
+
+    .header {
+    text-align: center;
+    padding: 32px;
+    
+    padding: 10px;
+    }
+
+    .dark-mode {
+    background-color:black;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    .main{
+        position :absolute;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,300px));
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+    </style>
+</head>
+<body >
+    <div>
+        <div class="emoji emoji--like">
+            <div class="emoji__hand">
+            <div class="emoji__thumb"></div>
+            </div>
+        </div>
+        <div class="emoji emoji--love">
+            <div class="emoji__heart"></div>
+        </div>
+        <div class="emoji emoji--haha">
+            <div class="emoji__face">
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth">
+                <div class="emoji__tongue"></div>
+            </div>
+            </div>
+        </div>
+        <div class="emoji emoji--yay">
+            <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji emoji--wow">
+            <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji emoji--sad">
+            <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
+            </div>
+        </div>
+        <div class="emoji emoji--angry">
+            <div class="emoji__face">
+            <div class="emoji__eyebrows"></div>
+            <div class="emoji__eyes"></div>
+            <div class="emoji__mouth"></div>
+            </div>
+        </div>
+    </div>
+    <div><h1 style="color:#ff2c45;text-align:center;">CHOOSE YOUR TEMPLATE AND DOWNLOAD</h1></div>
+    <button style= "width: 120px;margin-left:1200px;"  onclick="myFunction()">Dark/light</button>
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+    </div>
+    <div id="main">
+        <a href="board.jpeg" download><img src="board.jpeg"></a>
+        <a href="thor.jpeg" download><img src="thor.jpeg" ></a>
+        <a href="shock.jpeg" download><img src="shock.jpeg" ></a>
+        <a href="run.jpeg" download><img src="run.jpeg" ></a>
+        <a href="smile.jpeg" download><img src="smile.jpeg"></a>
+        <a href="reaction.jpeg" download><img src="reaction.jpeg" ></a>
+        <a href="bean.jpeg" download><img src="bean.jpeg" ></a>
+        <a href="bean_react.jpeg" download><img  src="bean_react.jpeg" ></a>
+        <a href="sentiment.jpeg" download><img  src="sentiment.jpeg" ></a>
+        <a href="inception.jpeg" download><img  src="inception.jpeg" ></a>
+        <a href="dicaprio.jpeg" download><img  src="dicaprio.jpeg" ></a>
+        <a href="wall_street.jpeg" download><img  src="wall_street.jpeg" ></a>
+        <a href="blacky.jpeg" download><img src="blacky.jpeg" ></a>
+        <a href="think.jpeg" download><img src="think.jpeg" ></a>
+        <a href="react.jpeg" download><img src="react.jpeg"></a>
+        <a href="trump.jpg" download><img src="trump.jpg" ></a>
+        <a href="KGF2.jpg" download=""><img src="KGF2.jpg" ></a>
+        <a href="kohli.jpg" download><img src="kohli.jpg" ></a>
+        <a href="survivor.jpeg" download><img src="survivor.jpeg" ></a>
+        <a href="baby.jpg" download><img src="baby.jpg" ></a>
+        <a href="phone_msg.jpg" download><img src="phone_msg.jpg" ></a>
+        <a href="breaking_news.jpg" download><img src="breaking_news.jpg" ></a>
+        <a href="shoot.jpg" download><img src="shoot.jpg" ></a>
+        <a href="dog.jpg" download><img src="dog.jpg" ></a>
+    </div>
+    <script>
+        function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
